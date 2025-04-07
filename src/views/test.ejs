@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>test page</title>
+</head>
+<body>
+    <div class="table-responsive table-striped table-bordered">
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Firstname</th>
+                <th scope="col">Lastname</th>
+                <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                <% for(let i=0; i < dataTable.length; i++) { %>
+                    <tr>
+                        <td><%= dataTable[i].id %></td>
+                        <td><%= dataTable[i].firstName %></td>
+                        <td><%= dataTable[i].lastName %></td>
+                        <td><%= dataTable[i].email %></td>
+                    </tr>
+                 <% } %>
+            </tbody>
+        </table>
+      </div> 
+</body>
+</html>

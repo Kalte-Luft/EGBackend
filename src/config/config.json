@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "ywgqp97rs3et_admin",
+    "password": "sadboylamdoan",
+    "database": "ywgqp97rs3et_EliteGo",
+    "host": "kevin.id.vn",
+    "logging": false,
+    "timezone": "+07:00",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "ywgqp97rs3et_admin",
+    "password": "sadboylamdoan",
+    "database": "database_test",
+    "host": "kevin.id.vn",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "ywgqp97rs3et_admin",
+    "password": "sadboylamdoan",
+    "database": "database_production",
+    "host": "kevin.id.vn",
+    "dialect": "mysql"
+  }
+}
