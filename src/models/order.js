@@ -36,8 +36,6 @@ module.exports = (sequelize, DataTypes) => {
             receiver: DataTypes.JSON, // Thông tin người nhận hàng
             distance: DataTypes.DECIMAL(8, 2), // Khoảng cách
             except_drivers: DataTypes.JSON, // Danh sách tài xế không được nhận đơn hàng
-            created_at: DataTypes.DATE,
-            updated_at: DataTypes.DATE,
         },
         {
             sequelize,

@@ -42,8 +42,6 @@ module.exports = (sequelize, DataTypes) => {
             // và sẽ được lưu vào cơ sở dữ liệu
             // để server có thể gửi thông báo đến người dùng
             avatar: DataTypes.STRING,
-            created_at: DataTypes.DATE,
-            updated_at: DataTypes.DATE,
         },
         {
             sequelize,

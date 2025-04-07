@@ -3,7 +3,7 @@ import CRUDService from "../services/CRUDService.js";
 
 let getHomePage = async(reg,res) =>{
     try {
-        let data = await db.User.findAll();//truy vấn tất cả dữ liệu trong bảng User
+        let data = await db.UserDriver.findAll();//truy vấn tất cả dữ liệu trong bảng User
         return res.render("home.ejs",{
             data: JSON.stringify(data)
         });

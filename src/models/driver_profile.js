@@ -18,8 +18,6 @@ module.exports = (sequelize, DataTypes) => {
             },
             driver_id: DataTypes.BIGINT,
             license_data: DataTypes.JSON, // Dữ liệu GPLX được lấy từ QR code
-            created_at: DataTypes.DATE,
-            updated_at: DataTypes.DATE,
         },
         {
             sequelize,
