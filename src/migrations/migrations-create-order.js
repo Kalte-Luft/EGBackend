@@ -36,10 +36,6 @@ module.exports = {
         type: Sequelize.JSON,
         allowNull: false
       },
-      items: {
-        type: Sequelize.JSON,
-        allowNull: true
-      },
       shipping_cost: {
         type: Sequelize.DECIMAL(19, 2),
         allowNull: true
@@ -72,10 +68,6 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: true
       },
-      receiver: {
-        type: Sequelize.JSON,
-        allowNull: true
-      },
       distance: {
         type: Sequelize.DECIMAL(8, 2),
         allowNull: true
@@ -94,6 +86,7 @@ module.exports = {
       }
     });
   },
+
   down: async (queryInterface, Sequelize) => {
     await queryInterface.dropTable('Orders');
   }

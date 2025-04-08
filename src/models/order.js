@@ -33,7 +33,6 @@ module.exports = (sequelize, DataTypes) => {
             user_note: DataTypes.TEXT, // Ghi chú của người dùng
             driver_note: DataTypes.TEXT, // Ghi chú của tài xế
             driver_rate: DataTypes.INTEGER, // Đánh giá cho tài xế
-            receiver: DataTypes.JSON, // Thông tin người nhận hàng
             distance: DataTypes.DECIMAL(8, 2), // Khoảng cách
             except_drivers: DataTypes.JSON, // Danh sách tài xế không được nhận đơn hàng
         },

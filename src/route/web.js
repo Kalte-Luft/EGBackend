@@ -2,6 +2,8 @@ import express from 'express';
 import homeController from '../controllers/homeController';
 import userController from '../controllers/userController';
 import driverProfileController from '../controllers/driverProfileController';
+import orderController from '../controllers/orderController';
+
 let router = express.Router();
 let initWebRoutes = (app) => {
     router.get("/",homeController.getHomePage );
@@ -20,6 +22,13 @@ let initWebRoutes = (app) => {
     router.delete("/api/delete-driver",driverProfileController.handleDeleteDriver);
     router.put("/api/edit-driver",driverProfileController.handleUpdateDriver);
     router.get("/api/get-all-driver",driverProfileController.handleGetAllDrivers);
+
+    //api order 
+    router.get("/api/get-all-order",orderController.handleGetAllOrders);
+    router.post("/api/create-new-order",orderController.handleCreateOrder);
+    router.delete("/api/delete-order",orderController.handleDeleteOrder);
+    router.put("/api/update-order",orderController.handleUpdateOrder);
+    
     
     return app.use("/", router);
 
